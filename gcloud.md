@@ -2,9 +2,12 @@
 title: Google-Cloud
 description: gcloud commands
 published: true
-date: 2019-07-01T15:28:56.266Z
+date: 2019-07-02T09:54:39.213Z
 tags: 
 ---
+
+# google cloud architect certification
+
 
 ### 	Set Up Network and HTTP Load Balancers
 
