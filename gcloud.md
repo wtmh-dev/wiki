@@ -2,7 +2,7 @@
 title: Google-Cloud
 description: gcloud commands
 published: true
-date: 2019-07-04T15:08:51.951Z
+date: 2019-07-04T15:14:11.299Z
 tags: 
 ---
 
@@ -14,7 +14,11 @@ tags:
 
 ### Deployment Manager - Full Production
 
-###
+### Continuous Delivery with Jenkins in Kubernetes Engine
+
+### Networking 102
+
+### Site Reliability Troubleshooting with Stackdriver APM
 
 [19 state of salaries](https://hired.com/page/state-of-salaries)
 
