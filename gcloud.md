@@ -2,7 +2,7 @@
 title: Google-Cloud
 description: gcloud commands
 published: true
-date: 2019-07-04T15:07:16.884Z
+date: 2019-07-04T15:08:51.951Z
 tags: 
 ---
 
@@ -10,8 +10,11 @@ tags:
 
 ## [Cloud Architecture](https://www.qwiklabs.com/quests/24)
 
+### Orchestrating the Cloud with Kubernetes
 
+### Deployment Manager - Full Production
 
+###
 
 [19 state of salaries](https://hired.com/page/state-of-salaries)
 
