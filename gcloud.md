@@ -2,11 +2,16 @@
 title: Google-Cloud
 description: gcloud commands
 published: true
-date: 2019-07-03T15:57:17.386Z
+date: 2019-07-04T15:07:16.884Z
 tags: 
 ---
 
-# google cloud architect certification
+# [google cloud architect certification](https://cloud.google.com/certification/cloud-architect)
+
+## [Cloud Architecture](https://www.qwiklabs.com/quests/24)
+
+
+
 
 [19 state of salaries](https://hired.com/page/state-of-salaries)
 
