@@ -2,11 +2,13 @@
 title: english
 description: 
 published: true
-date: 2019-07-09T15:47:21.721Z
+date: 2019-07-10T08:35:18.682Z
 tags: 
 ---
 
 # Header
+
+expect
 
 great
 Greet
@@ -48,6 +50,7 @@ You're welcome. Goodbye
 
 __________________________________________
 
+### People will have to go
 
 Simon Ball, the general manager of a company that is facing serious difficulties has a strenuous task ahead of him.
 He has called a meeting with the Human Resources Manager, Peter Hey,
