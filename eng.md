@@ -2,7 +2,7 @@
 title: english
 description: 
 published: true
-date: 2019-07-10T08:42:52.565Z
+date: 2019-07-10T08:44:04.520Z
 tags: 
 ---
 
@@ -10,9 +10,9 @@ tags:
 
 expect
 
-doubt
-undoubtedly
-https://dictionary.cambridge.org/dictionary/english/undoubtedly
+doubt		/daʊt/ 
+
+undoubtedly		/ʌnˈdɑʊ·t̬ɪd·li/
 
 great
 Greet
