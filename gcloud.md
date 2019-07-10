@@ -2,7 +2,7 @@
 title: Google-Cloud
 description: gcloud commands
 published: true
-date: 2019-07-10T15:30:49.590Z
+date: 2019-07-10T20:55:17.245Z
 tags: 
 ---
 
