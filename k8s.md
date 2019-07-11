@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T15:22:38.310Z
+date: 2019-07-11T15:24:29.530Z
 tags: 
 ---
 
@@ -22,7 +22,7 @@ tags:
 ❯ kubens
 # for change the nameSpace
 
-❯ kunectx
+❯ kubectx
 # for change the context
 ```
 
