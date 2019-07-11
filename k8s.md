@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T12:43:18.400Z
+date: 2019-07-11T12:48:37.625Z
 tags: 
 ---
 
@@ -140,6 +140,7 @@ Events:                   <none>
 
 ```
 ❯ minikube ip
+
 192.168.99.102
 
 ❯ curl -I http://192.168.99.102:31500/
