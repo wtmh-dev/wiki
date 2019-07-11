@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T12:32:30.081Z
+date: 2019-07-11T12:34:41.641Z
 tags: 
 ---
 
@@ -38,7 +38,7 @@ tags:
 #### Now create a new yaml file for our deployment configuration.
 
 ```
-❯ vim nginx-deployment-service.yaml
+❯ vim nginx-deployment.yaml
 ```
 
 #### And paste configurations below.
@@ -85,6 +85,9 @@ spec:
 ```
 ❯ kubectl create -f nginx-deployment.yaml
 ```
+
+
+
 
 #### When it's complete, check the Kubernetes deployment.
 
