@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T12:34:41.641Z
+date: 2019-07-11T12:36:01.064Z
 tags: 
 ---
 
@@ -86,9 +86,6 @@ spec:
 ❯ kubectl create -f nginx-deployment.yaml
 ```
 
-
-
-
 #### When it's complete, check the Kubernetes deployment.
 
 ```
@@ -125,6 +122,13 @@ Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
 ```
+#### delete the service
+
+```
+❯ kubectl delete services hello-minikube
+```
+
+#### get the url
 
 ```
 ❯ minikube service <name-of-service> --url
