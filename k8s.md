@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T12:36:25.803Z
+date: 2019-07-11T12:43:18.400Z
 tags: 
 ---
 
@@ -122,10 +122,12 @@ Session Affinity:         None
 External Traffic Policy:  Cluster
 Events:                   <none>
 ```
-#### delete the service
+#### delete the service/deployment
 
 ```
 ❯ kubectl delete services <name-of-service>
+
+❯ kubectl delete deployment <name-of-service>
 ```
 
 #### get the url
