@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T12:07:07.965Z
+date: 2019-07-11T12:24:15.821Z
 tags: 
 ---
 
@@ -93,15 +93,36 @@ kubectl describe deployments nginx-deployment
 #### Now check the Kubernetes service.
 
 ```
-kubectl get services
-kubectl describe services nginx-service
+❯ kubectl get services
+NAME             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+hello-minikube   NodePort    10.103.17.160   <none>        8080:30798/TCP   5m
+kubernetes       ClusterIP   10.96.0.1       <none>        443/TCP          23m
+nginx-service    NodePort    10.98.112.245   <none>        80:31500/TCP     14m
+
+❯ kubectl describe services nginx-service
+Name:                     nginx-service
+Namespace:                default
+Labels:                   run=nginx-service
+Annotations:              <none>
+Selector:                 app=nginx
+Type:                     NodePort
+IP:                       10.98.112.245
+Port:                     <unset>  80/TCP
+TargetPort:               80/TCP
+NodePort:                 <unset>  31500/TCP
+Endpoints:                172.17.0.4:80
+Session Affinity:         None
+External Traffic Policy:  Cluster
+Events:                   <none>
 ```
 
 #### Check the Kubernetes cluster IP and access it using curl command.
 
 ```
-minikube ip
-curl -I http://192.168.39.49:32274/
+❯ minikube ip
+192.168.99.102
+
+❯ curl -I http://192.168.99.102:31500/
 ```
 
 #### Below is the result when we access from the web browser.
