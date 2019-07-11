@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T11:50:48.088Z
+date: 2019-07-11T11:54:19.645Z
 tags: 
 ---
 
@@ -56,10 +56,11 @@ curl $(minikube service hello-minikube --url)
 minikube ssh
 ```
 
-### After you’ll finish – stop and delete VMs, pods, and services:
+### Minikube stop/delete
 
 ```
-$ minikube stop
+minikube stop
+minikube delete
 ```
 
 ### Done.
