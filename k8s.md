@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T12:24:15.821Z
+date: 2019-07-11T12:32:30.081Z
 tags: 
 ---
 
@@ -13,29 +13,32 @@ tags:
 ### Start Minikube itself:
 
 ```
-minikube start
+❯ minikube start
 ```
 
 ### status/check Minikube itself:
 
 ```
-minikube status
-kubectl cluster-info
-kubectl get nodes
-VBoxManage list runningvms
+❯ minikube status
+
+❯ kubectl cluster-info
+
+❯ kubectl get nodes
+
+❯ VBoxManage list runningvms
 ```
 
 
 ### Testing Deployments
 
 ```
-mkdir -p projects/nginx/cd projects/nginx/
+❯ mkdir -p projects/nginx/cd projects/nginx/
 ```
 
 #### Now create a new yaml file for our deployment configuration.
 
 ```
-vim nginx-deployment-service.yaml
+❯ vim nginx-deployment-service.yaml
 ```
 
 #### And paste configurations below.
@@ -80,26 +83,30 @@ spec:
 #### Now create the deployment by running the kubectl command below.
 
 ```
-kubectl create -f nginx-deployment.yaml
+❯ kubectl create -f nginx-deployment.yaml
 ```
 
 #### When it's complete, check the Kubernetes deployment.
 
 ```
-kubectl get deployments
-kubectl describe deployments nginx-deployment
+❯ kubectl get deployments
+
+❯ kubectl describe deployments nginx-deployment
 ```
 
 #### Now check the Kubernetes service.
 
 ```
 ❯ kubectl get services
+
 NAME             TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
 hello-minikube   NodePort    10.103.17.160   <none>        8080:30798/TCP   5m
 kubernetes       ClusterIP   10.96.0.1       <none>        443/TCP          23m
 nginx-service    NodePort    10.98.112.245   <none>        80:31500/TCP     14m
 
+
 ❯ kubectl describe services nginx-service
+
 Name:                     nginx-service
 Namespace:                default
 Labels:                   run=nginx-service
@@ -116,6 +123,10 @@ External Traffic Policy:  Cluster
 Events:                   <none>
 ```
 
+```
+❯ minikube service <name-of-service> --url
+```
+
 #### Check the Kubernetes cluster IP and access it using curl command.
 
 ```
@@ -128,13 +139,13 @@ Events:                   <none>
 #### Below is the result when we access from the web browser.
 
 ```
-http://<ip>:32274/
+❯ http://<ip>:32274/
 ```
 
 #### Access Kubernetes Dashboard
 
 ```
-minikube dashboard
+❯ minikube dashboard
 ```
 
 ---
@@ -144,13 +155,14 @@ minikube dashboard
 #### Create a new pod:
 
 ```
-$ kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+❯ kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
 ```
 
 ### Run the service:
 
 ```
-kubectl expose deployment hello-minikube --type=NodePort
+❯ kubectl expose deployment hello-minikube --type=NodePort
+
 # service "hello-minikube" exposed
 
 ```
@@ -158,25 +170,24 @@ kubectl expose deployment hello-minikube --type=NodePort
 ### List pods:
 
 ```
-kubectl get pod
+❯ kubectl get pod
 ```
 
 ### And check the service itself:
 
 ```
-curl $(minikube service hello-minikube --url)
+❯ curl $(minikube service hello-minikube --url)
 ```
 ### SSH into the VM Minikube:
 
 ```
-minikube ssh
+❯ minikube ssh
 ```
 
 ### Finally stop/delete Minikube:
 
 ```
-minikube stop
-minikube delete
+❯ minikube stop && minikube delete
 ```
 
 ### Done.
