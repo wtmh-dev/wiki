@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T12:48:37.625Z
+date: 2019-07-11T15:22:38.310Z
 tags: 
 ---
 
@@ -15,6 +15,18 @@ tags:
 ```
 ❯ minikube start
 ```
+
+### change the nameSpace/context:
+
+```
+❯ kubens
+# for change the nameSpace
+
+❯ kunectx
+# for change the context
+```
+
+
 
 ### status/check Minikube itself:
 
