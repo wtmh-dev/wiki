@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T12:36:01.064Z
+date: 2019-07-11T12:36:25.803Z
 tags: 
 ---
 
@@ -125,7 +125,7 @@ Events:                   <none>
 #### delete the service
 
 ```
-❯ kubectl delete services hello-minikube
+❯ kubectl delete services <name-of-service>
 ```
 
 #### get the url
