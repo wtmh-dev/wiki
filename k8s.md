@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-11T11:46:21.507Z
+date: 2019-07-11T11:50:48.088Z
 tags: 
 ---
 
@@ -16,9 +16,12 @@ tags:
 minikube start
 ```
 
-### Check Virtualbox VMs running:
+### status/check Minikube itself:
 
 ```
+minikube status
+kubectl cluster-info
+kubectl get nodes
 VBoxManage list runningvms
 ```
 
