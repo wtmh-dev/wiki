@@ -2,11 +2,15 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-12T09:44:16.576Z
+date: 2019-07-12T09:47:49.792Z
 tags: 
 ---
 
 ## Definitions:
+
+* **Nametags** : Kubernetes uses labels to identify things and it can query based on thiese labels.
+
+.
 
 * **Node** : A compute instance which runs docker containers, managed by a cluster master.
 
