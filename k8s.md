@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-13T15:40:27.187Z
+date: 2019-07-13T18:53:52.636Z
 tags: 
 ---
 
@@ -51,6 +51,13 @@ tags:
 ## Kubectl commands
 
 ```
+❯ kc get nodes -o wide
+❯ kc get ns
+❯ kc get all
+❯ kc describe node minikube
+❯ kc describe node minikube
+
+
 ❯ kc get nodes -o wide
 
 NAME       STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE              KERNEL-VERSION   CONTAINER-RUNTIME
