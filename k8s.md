@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-13T18:53:52.636Z
+date: 2019-07-13T18:54:42.840Z
 tags: 
 ---
 
@@ -149,6 +149,34 @@ Allocated resources:
   ephemeral-storage  0 (0%)       0 (0%)
 Events:              <none>
 
+
+❯ kc get all
+
+NAME                              READY   STATUS    RESTARTS   AGE
+pod/cheddar-845749dbd6-8c2q9      1/1     Running   0          27h
+pod/cheddar-845749dbd6-dmc7h      1/1     Running   0          27h
+pod/stilton-f89c97cdb-fckc4       1/1     Running   0          27h
+pod/stilton-f89c97cdb-vf2w4       1/1     Running   0          27h
+pod/wensleydale-7c5ff658b-8q82z   1/1     Running   0          27h
+pod/wensleydale-7c5ff658b-9rj2s   1/1     Running   0          27h
+
+
+NAME                  TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+service/cheddar       ClusterIP   10.97.10.72     <none>        80/TCP    27h
+service/kubernetes    ClusterIP   10.96.0.1       <none>        443/TCP   27h
+service/stilton       ClusterIP   10.108.229.75   <none>        80/TCP    27h
+service/wensleydale   ClusterIP   10.107.52.18    <none>        80/TCP    27h
+
+
+NAME                          READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/cheddar       2/2     2            2           27h
+deployment.apps/stilton       2/2     2            2           27h
+deployment.apps/wensleydale   2/2     2            2           27h
+
+NAME                                    DESIRED   CURRENT   READY   AGE
+replicaset.apps/cheddar-845749dbd6      2         2         2       27h
+replicaset.apps/stilton-f89c97cdb       2         2         2       27h
+replicaset.apps/wensleydale-7c5ff658b   2         2         2       27h
 
 
 
