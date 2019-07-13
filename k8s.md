@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-13T13:54:48.326Z
+date: 2019-07-13T14:00:02.011Z
 tags: 
 ---
 
@@ -30,7 +30,7 @@ tags:
 
 
 .
-* **Node** : A compute instance which runs docker containers, managed by a cluster master.
+* **Node/Workers** : A compute instance which runs docker containers, managed by a cluster master.
 
 .
 * **Cluster** : One or more "worker nodes" which run containers. Very similar to a Docker Swarm node. In most cloud provider deployments, the [master node for your cluster is provided free of charge](https://www.sdxcentral.com/articles/news/google-eliminates-gke-management-fees-kubernetes-clusters/2017/11/), but you don't get to access it.
@@ -42,13 +42,10 @@ tags:
 * **External access** : Services not only allow pods to discover each other, but they're also the mechanism through which the outside world can talk to a container. At the simplest level, this is akin to exposing a container port on a docker host.
 
 .
-* **Controller** : When mapping ports to applications is inadequate (think virtual web hosts), an ingress is a sort of "inbound router" which can receive requests on one port (i.e., HTTPS), and forward them to a variety of internal pods, based on things like VHOST, etc. For us, this is the functional equivalent of what Traefik does in Docker Swarm. In fact, we use a Traefik Ingress in Kubernetes to accomplish the same.
+* **Controller** : .
 
 .
-* **Workers** : When mapping ports to applications is inadequate (think virtual web hosts), an ingress is a sort of "inbound router" which can receive requests on one port (i.e., HTTPS), and forward them to a variety of internal pods, based on things like VHOST, etc. For us, this is the functional equivalent of what Traefik does in Docker Swarm. In fact, we use a Traefik Ingress in Kubernetes to accomplish the same.
-
-.
-* **Etcd** : When mapping ports to applications is inadequate (think virtual web hosts), an ingress is a sort of "inbound router" which can receive requests on one port (i.e., HTTPS), and forward them to a variety of internal pods, based on things like VHOST, etc. For us, this is the functional equivalent of what Traefik does in Docker Swarm. In fact, we use a Traefik Ingress in Kubernetes to accomplish the same.
+* **Etcd** : .
 
 
 ---
