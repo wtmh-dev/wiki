@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-13T14:00:02.011Z
+date: 2019-07-13T14:04:36.500Z
 tags: 
 ---
 
@@ -42,11 +42,19 @@ tags:
 * **External access** : Services not only allow pods to discover each other, but they're also the mechanism through which the outside world can talk to a container. At the simplest level, this is akin to exposing a container port on a docker host.
 
 .
-* **Controller** : .
+* **Controller** : where deploy the container.
 
 .
 * **Etcd** : .
 
+
+## Kubectl commands
+
+```
+❯ kc get nodes -o wide
+NAME       STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE              KERNEL-VERSION   CONTAINER-RUNTIME
+minikube   Ready    master   22h   v1.15.0   10.0.2.15     <none>        Buildroot 2018.05.3   4.15.0           docker://18.9.6
+```
 
 ---
 ---
