@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-13T18:54:42.840Z
+date: 2019-07-13T18:55:05.534Z
 tags: 
 ---
 
@@ -54,9 +54,8 @@ tags:
 ❯ kc get nodes -o wide
 ❯ kc get ns
 ❯ kc get all
-❯ kc describe node minikube
-❯ kc describe node minikube
-
+❯ kc
+❯ kc
 
 ❯ kc get nodes -o wide
 
