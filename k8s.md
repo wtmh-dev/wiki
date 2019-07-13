@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-13T14:04:36.500Z
+date: 2019-07-13T15:40:27.187Z
 tags: 
 ---
 
@@ -52,8 +52,99 @@ tags:
 
 ```
 ❯ kc get nodes -o wide
+
 NAME       STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE              KERNEL-VERSION   CONTAINER-RUNTIME
 minikube   Ready    master   22h   v1.15.0   10.0.2.15     <none>        Buildroot 2018.05.3   4.15.0           docker://18.9.6
+
+❯ kc get ns
+
+NAME              STATUS   AGE
+default           Active   22h
+kube-node-lease   Active   22h
+kube-public       Active   22h
+kube-system       Active   22h 
+
+
+❯ kc describe node minikube
+
+Name:               minikube
+Roles:              master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=minikube
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/master=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /var/run/dockershim.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 12 Jul 2019 17:34:05 +0200
+Taints:             <none>
+Unschedulable:      false
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Sat, 13 Jul 2019 17:35:33 +0200   Fri, 12 Jul 2019 17:34:00 +0200   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Sat, 13 Jul 2019 17:35:33 +0200   Fri, 12 Jul 2019 17:34:00 +0200   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Sat, 13 Jul 2019 17:35:33 +0200   Fri, 12 Jul 2019 17:34:00 +0200   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Sat, 13 Jul 2019 17:35:33 +0200   Fri, 12 Jul 2019 17:34:00 +0200   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  10.0.2.15
+  Hostname:    minikube
+Capacity:
+ cpu:                2
+ ephemeral-storage:  17784772Ki
+ hugepages-2Mi:      0
+ memory:             2038624Ki
+ pods:               110
+Allocatable:
+ cpu:                2
+ ephemeral-storage:  16390445849
+ hugepages-2Mi:      0
+ memory:             1936224Ki
+ pods:               110
+System Info:
+ Machine ID:                 b42cfab1d3cc4a17885990437c60c37b
+ System UUID:                E2897876-E796-4CC2-8182-A8A816E30610
+ Boot ID:                    74a6530a-4372-4aa9-a71d-a79ac1ab0ebe
+ Kernel Version:             4.15.0
+ OS Image:                   Buildroot 2018.05.3
+ Operating System:           linux
+ Architecture:               amd64
+ Container Runtime Version:  docker://18.9.6
+ Kubelet Version:            v1.15.0
+ Kube-Proxy Version:         v1.15.0
+Non-terminated Pods:         (16 in total)
+  Namespace                  Name                                     CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                  ----                                     ------------  ----------  ---------------  -------------  ---
+  default                    cheddar-845749dbd6-8c2q9                 100m (5%)     100m (5%)   50Mi (2%)        50Mi (2%)      23h
+  default                    cheddar-845749dbd6-dmc7h                 100m (5%)     100m (5%)   50Mi (2%)        50Mi (2%)      23h
+  default                    stilton-f89c97cdb-fckc4                  100m (5%)     100m (5%)   50Mi (2%)        50Mi (2%)      23h
+  default                    stilton-f89c97cdb-vf2w4                  100m (5%)     100m (5%)   50Mi (2%)        50Mi (2%)      23h
+  default                    wensleydale-7c5ff658b-8q82z              100m (5%)     100m (5%)   50Mi (2%)        50Mi (2%)      23h
+  default                    wensleydale-7c5ff658b-9rj2s              100m (5%)     100m (5%)   50Mi (2%)        50Mi (2%)      23h
+  kube-system                coredns-5c98db65d4-2f9wc                 100m (5%)     0 (0%)      70Mi (3%)        170Mi (8%)     24h
+  kube-system                coredns-5c98db65d4-dh7s2                 100m (5%)     0 (0%)      70Mi (3%)        170Mi (8%)     24h
+  kube-system                etcd-minikube                            0 (0%)        0 (0%)      0 (0%)           0 (0%)         24h
+  kube-system                kube-addon-manager-minikube              5m (0%)       0 (0%)      50Mi (2%)        0 (0%)         24h
+  kube-system                kube-apiserver-minikube                  250m (12%)    0 (0%)      0 (0%)           0 (0%)         24h
+  kube-system                kube-controller-manager-minikube         200m (10%)    0 (0%)      0 (0%)           0 (0%)         24h
+  kube-system                kube-proxy-rkdjz                         0 (0%)        0 (0%)      0 (0%)           0 (0%)         24h
+  kube-system                kube-scheduler-minikube                  100m (5%)     0 (0%)      0 (0%)           0 (0%)         24h
+  kube-system                kubernetes-dashboard-7b8ddcb5d6-9mn27    0 (0%)        0 (0%)      0 (0%)           0 (0%)         24h
+  kube-system                storage-provisioner                      0 (0%)        0 (0%)      0 (0%)           0 (0%)         24h
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                1355m (67%)  600m (30%)
+  memory             490Mi (25%)  640Mi (33%)
+  ephemeral-storage  0 (0%)       0 (0%)
+Events:              <none>
+
+
+
+
 ```
 
 ---
@@ -66,6 +157,7 @@ minikube   Ready    master   22h   v1.15.0   10.0.2.15     <none>        Buildro
 
 ```
 ❯ minikube start
+❯ minikube tunnel
 ```
 
 ### change the nameSpace/context:
