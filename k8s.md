@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-12T10:07:46.214Z
+date: 2019-07-13T13:54:48.326Z
 tags: 
 ---
 
@@ -11,7 +11,7 @@ tags:
 * **Nametags** : Kubernetes uses labels to identify things and it can query based on thiese labels.
 
 .
-*   **Pod** : A collection of one or more the containers. If a pod runs multiple containers, these containers always run on the same node.
+* **Pod** : A collection of one or more the containers. If a pod runs multiple containers, these containers always run on the same node.
 
 .
 * **Replication Controllers** : Provides a pod template for creating any number of pod copies. Provides logic for scaling the pod up or down. Can be used for rolling deploys.
@@ -42,7 +42,13 @@ tags:
 * **External access** : Services not only allow pods to discover each other, but they're also the mechanism through which the outside world can talk to a container. At the simplest level, this is akin to exposing a container port on a docker host.
 
 .
-* **Ingress** : When mapping ports to applications is inadequate (think virtual web hosts), an ingress is a sort of "inbound router" which can receive requests on one port (i.e., HTTPS), and forward them to a variety of internal pods, based on things like VHOST, etc. For us, this is the functional equivalent of what Traefik does in Docker Swarm. In fact, we use a Traefik Ingress in Kubernetes to accomplish the same.
+* **Controller** : When mapping ports to applications is inadequate (think virtual web hosts), an ingress is a sort of "inbound router" which can receive requests on one port (i.e., HTTPS), and forward them to a variety of internal pods, based on things like VHOST, etc. For us, this is the functional equivalent of what Traefik does in Docker Swarm. In fact, we use a Traefik Ingress in Kubernetes to accomplish the same.
+
+.
+* **Workers** : When mapping ports to applications is inadequate (think virtual web hosts), an ingress is a sort of "inbound router" which can receive requests on one port (i.e., HTTPS), and forward them to a variety of internal pods, based on things like VHOST, etc. For us, this is the functional equivalent of what Traefik does in Docker Swarm. In fact, we use a Traefik Ingress in Kubernetes to accomplish the same.
+
+.
+* **Etcd** : When mapping ports to applications is inadequate (think virtual web hosts), an ingress is a sort of "inbound router" which can receive requests on one port (i.e., HTTPS), and forward them to a variety of internal pods, based on things like VHOST, etc. For us, this is the functional equivalent of what Traefik does in Docker Swarm. In fact, we use a Traefik Ingress in Kubernetes to accomplish the same.
 
 
 ---
