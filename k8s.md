@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-13T18:55:05.534Z
+date: 2019-07-13T18:59:14.625Z
 tags: 
 ---
 
@@ -47,6 +47,8 @@ tags:
 .
 * **Etcd** : .
 
+.
+* **HPA** : . Horizontal Pod Autoscaler
 
 ## Kubectl commands
 
