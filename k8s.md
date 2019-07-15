@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-15T10:20:45.326Z
+date: 2019-07-15T10:57:41.291Z
 tags: 
 ---
 
@@ -365,7 +365,7 @@ To output details to your terminal window in a specific format, you can add eith
 ❯ kc get nodes -o wide
 ❯ kc get ns
 ❯ kc get all
-❯ kc
+❯ kc label pod hello-7d95dc9cb4-kvk2j role=cuarentena --overwrite
 ❯ kc
 
 ❯ kc get nodes -o wide
