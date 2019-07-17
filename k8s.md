@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-15T16:35:19.614Z
+date: 2019-07-17T16:25:15.364Z
 tags: 
 ---
 
@@ -367,8 +367,6 @@ To output details to your terminal window in a specific format, you can add eith
 ❯ kc get all
 ❯ kc label pod hello-7d95dc9cb4-kvk2j role=cuarentena --overwrite
 ❯ kc
-
-❯ kc get nodes -o wide
 
 NAME       STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE              KERNEL-VERSION   CONTAINER-RUNTIME
 minikube   Ready    master   22h   v1.15.0   10.0.2.15     <none>        Buildroot 2018.05.3   4.15.0           docker://18.9.6
