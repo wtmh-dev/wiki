@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-17T16:54:26.340Z
+date: 2019-07-17T16:57:43.112Z
 tags: 
 ---
 
@@ -23,9 +23,9 @@ tags:
 * **Persistent Volume** : Provides expose both persistent and ephmeral storage > CEPH. Pods can mount volumes like filesystems. A virtual disk which is attached to a pod, storing persistent data. Meets the requirement for shared storage from Docker Swarm. I.e., if a persistent volume (PV) is bound to a pod, and the pod dies and is recreated, or get upgraded to a new image, the PV the data is bound to the new container. PVs can be "claimed" in a YAML definition, so that your Kubernetes provider will auto\-create a PV when you launch your pod. PVs can be snapshotted.
 
 .
-* **Volume type** : Directory
+* **Volume type** : hostPath
 .
-* **Volume type** : Directory
+* **Volume type** : downwardAPI
 .
 * **Volume type** : Directory
 
