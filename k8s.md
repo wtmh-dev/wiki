@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-17T16:57:43.112Z
+date: 2019-07-17T17:00:01.357Z
 tags: 
 ---
 
@@ -27,7 +27,7 @@ tags:
 .
 * **Volume type** : downwardAPI
 .
-* **Volume type** : Directory
+* **Volume type** : configMap
 
 
 
