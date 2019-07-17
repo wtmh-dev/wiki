@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-17T17:00:01.357Z
+date: 2019-07-17T17:03:12.697Z
 tags: 
 ---
 
@@ -25,9 +25,9 @@ tags:
 .
 * **Volume type** : hostPath
 .
-* **Volume type** : downwardAPI
+* **Volume type** : downwardAPI > compartir datos via API
 .
-* **Volume type** : configMap
+* **Volume type** : configMap > configuración flotando en el namespace
 
 
 
