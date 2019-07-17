@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-17T16:25:15.364Z
+date: 2019-07-17T16:54:26.340Z
 tags: 
 ---
 
@@ -21,6 +21,15 @@ tags:
 
 .
 * **Persistent Volume** : Provides expose both persistent and ephmeral storage > CEPH. Pods can mount volumes like filesystems. A virtual disk which is attached to a pod, storing persistent data. Meets the requirement for shared storage from Docker Swarm. I.e., if a persistent volume (PV) is bound to a pod, and the pod dies and is recreated, or get upgraded to a new image, the PV the data is bound to the new container. PVs can be "claimed" in a YAML definition, so that your Kubernetes provider will auto\-create a PV when you launch your pod. PVs can be snapshotted.
+
+.
+* **Volume type** : Directory
+.
+* **Volume type** : Directory
+.
+* **Volume type** : Directory
+
+
 
 .
 * **Namespace** : An abstraction to separate a collection of pods, services, ingresses, etc. A "virtual cluster within a cluster". Can be used for security, or simplicity. For example, since we don't have individual docker stacks anymore, if you commonly name your database container "db", and you want to deploy two applications which both use a database container, how will you name your services? Use namespaces to keep each application ("nextcloud" vs "kanboard") separate. Namespaces also allow you to allocate resources **limits** to the aggregate of containers in a namespace, so you could, for example, limit the "nextcloud" namespace to 2.3 CPUs and 1200MB RAM.
