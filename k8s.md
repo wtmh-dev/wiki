@@ -2,7 +2,7 @@
 title: kubernetes
 description: 
 published: true
-date: 2019-07-17T17:03:12.697Z
+date: 2019-07-23T16:26:44.332Z
 tags: 
 ---
 
@@ -711,4 +711,5 @@ Events:                   <none>
 ### Done.
 
 
+RollingRelease
 ---
