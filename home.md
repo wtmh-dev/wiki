@@ -2,7 +2,7 @@
 title: Home
 description: Home Page
 published: true
-date: 2019-07-23T16:19:22.167Z
+date: 2019-07-24T15:10:14.828Z
 tags: 
 ---
 
@@ -12,5 +12,3 @@ This is my knowledge base system!
 wellcome :)
 
 Where I get all kubernetes info and cloud deploy stuff..
-
-where I can found sources and ideas!
