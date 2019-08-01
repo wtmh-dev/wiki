@@ -2,16 +2,31 @@
 title: shell
 description: shell & bash
 published: true
-date: 2019-08-01T17:21:14.274Z
+date: 2019-08-01T17:28:43.733Z
 tags: 
 ---
 
 # Header
 
+**Listado de capítulos**
+
+Estos son todos los capítulos del tutorial [Scripts en Bash](https://www.atareao.es/tutorial/scripts-en-bash/),
+
+*   [1.\- Variables en Bash](https://www.atareao.es/tutorial/scripts-en-bash/variables-en-bash/)
+*   [2.\- Condicionales en Bash](https://www.atareao.es/tutorial/scripts-en-bash/condicionales-en-bash/)
+*   [3.\- Bucles en Bash](https://www.atareao.es/tutorial/scripts-en-bash/bucles-en-bash/)
+*   [4.\- Arrays en Bash](https://www.atareao.es/tutorial/scripts-en-bash/arrays-en-bash/)
+*   [5.\- Diccionarios en Bash](https://www.atareao.es/tutorial/scripts-en-bash/diccionarios-en-bash/)
+*   [6.\- Funciones en Bash](https://www.atareao.es/tutorial/scripts-en-bash/funciones-en-bash/)
+*   [7.\- Matemáticas en Bash](https://www.atareao.es/tutorial/scripts-en-bash/matematicas-en-bash/)
+*   8.\- Preguntar al usuario en Bash
+*   [9.\- Una ayuda para tus scripts](https://www.atareao.es/tutorial/scripts-en-bash/una-ayuda-para-tus-scripts/)
+
+
 ### read
 
 ```
-#!/bin/bash
+#!/bin/sh
 echo Introduce tu nombre
 read nombre
 echo Tu nombre es $nombre
@@ -83,6 +98,8 @@ read -sp "Introduce la contraseña: " password
 echo $password
 ```
 
+---
+---
 ---
 
 ```
