@@ -2,7 +2,7 @@
 title: ansible
 description: ansible
 published: true
-date: 2019-08-02T22:16:51.418Z
+date: 2019-08-02T22:26:37.419Z
 tags: 
 ---
 
@@ -11,6 +11,17 @@ tags:
 #### essentials software
 
 ```
-Fail2Ban
+OpenSSH Client
+OpenSSH Server
+
+apt-transport-https
+ca-certificates
+curl
+gnupg2
+software-properties-common
+vim
+fail2ban
+
+
 
 ```
