@@ -2,7 +2,7 @@
 title: ALMA - Arch Linux Mobile Appliance
 description: 
 published: true
-date: 2019-08-13T09:25:12.538Z
+date: 2019-08-13T09:35:05.430Z
 tags: 
 ---
 
@@ -48,4 +48,27 @@ grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable dhcpcd
 systemctl enable systemd-networkd
 systemctl enable sshd
+```
+
+## step 4 >>> setup wlan0Up.sh
+
+```
+#!/bin/bash
+
+wpa_supplicant -B -i wlan0 -c <(wpa_passphrase ColaCao ccNH2ohDmmseBR6Z7Hbs)
+
+sleep 3
+
+dhclient wlan0
+# dhcpcd wlan0
+
+sleep 9
+
+echo "wlan0:  ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓"
+\
+
+ifconfig wlan0 | grep "inet "
+
+\
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 ```
