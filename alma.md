@@ -2,7 +2,7 @@
 title: ALMA - Arch Linux Mobile Appliance
 description: 
 published: true
-date: 2019-08-13T08:02:08.449Z
+date: 2019-08-13T09:25:12.538Z
 tags: 
 ---
 
@@ -28,7 +28,7 @@ sudo alma chroot /dev/disk/by-id/usb-SanDisk_Ultra_USB_3.0_XXXXXXXXXXXXXXXXXXX-0
 ln -s /dev/null /etc/udev/rules.d/80-net-setup-link.rules
 cp /etc/netctl/examples/ethernet-dhcp /etc/netctl/eth0-arch_usb
 
-pacman -S openssh dialog wpa_supplicant --noconfirm
+pacman -S openssh dialog wpa_supplicant dhclient ppp --noconfirm
 
 ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
 hwclock --systohc --utc
