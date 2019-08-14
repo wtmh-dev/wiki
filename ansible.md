@@ -2,7 +2,7 @@
 title: ansible
 description: ansible
 published: true
-date: 2019-08-02T22:26:37.419Z
+date: 2019-08-02T22:26:38.835Z
 tags: 
 ---
 

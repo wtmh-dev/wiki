@@ -2,7 +2,7 @@
 title: iptables
 description: 
 published: true
-date: 2019-07-08T15:16:27.785Z
+date: 2019-07-08T15:16:29.303Z
 tags: 
 ---
 

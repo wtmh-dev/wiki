@@ -2,7 +2,7 @@
 title: fixing
 description: SOLUCIONAR PROBLEMAS DE FIRMWARE EN LINUX
 published: true
-date: 2019-08-01T15:44:34.120Z
+date: 2019-08-01T15:44:35.451Z
 tags: 
 ---
 

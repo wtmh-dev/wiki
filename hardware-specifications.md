@@ -2,7 +2,7 @@
 title: hardware specifications
 description: How To Find Hardware Specifications On Linux
 published: true
-date: 2019-08-02T14:52:54.594Z
+date: 2019-08-02T14:52:55.948Z
 tags: 
 ---
 

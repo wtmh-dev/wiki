@@ -2,7 +2,7 @@
 title: ALMA - Arch Linux Mobile Appliance
 description: 
 published: true
-date: 2019-08-13T14:34:12.155Z
+date: 2019-08-13T14:34:13.537Z
 tags: 
 ---
 
