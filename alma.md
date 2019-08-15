@@ -2,7 +2,7 @@
 title: ALMA - Arch Linux Mobile Appliance
 description: 
 published: true
-date: 2019-08-15T20:05:54.278Z
+date: 2019-08-15T20:09:28.432Z
 tags: 
 ---
 
@@ -25,6 +25,8 @@ sudo alma chroot /dev/disk/by-id/usb-SanDisk_Ultra_USB_3.0_XXXXXXXXXXXXXXXXXXX-0
 ```
 cd && vi setup.sh
 ```
+
+> replace all the values from inside this symbols *« »*
 
 ```
 #!/bin/bash
