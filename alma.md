@@ -2,7 +2,7 @@
 title: ALMA - Arch Linux Mobile Appliance
 description: 
 published: true
-date: 2019-08-16T08:52:48.408Z
+date: 2019-08-16T09:23:11.390Z
 tags: 
 ---
 
@@ -68,7 +68,7 @@ if [ -f /etc/redhat-release ] ; then
     DIST='RedHat'
     PSUEDONAME=$(sed s/.*\(// < /etc/redhat-release | sed s/\)//)
     REV=$(sed s/.*release\ // < /etc/redhat-release | sed s/\ .*//)
-    sed -i 's/#install-packages#/yum install -y iw wget awk msmtp msmtp-mta s-nail dhcpcd ifplugd sudo dnsmasq dialog wireless_tools polkit net-tools openssh/g' /root/up.sh
+    sed -i 's/#install-packages#/yum install -y iw wget awk msmtp msmtp-mta s-nail dhcpcd ifplugd sudo dnsmasq dialog wireless_tools net-tools openssh/g' /root/up.sh
     echo "$DIST based update"
 
   elif [ -f /etc/SuSE-release ] ; then
@@ -83,18 +83,19 @@ if [ -f /etc/redhat-release ] ; then
   elif [ -f /etc/debian_version ] ; then	
     if [ "$(awk -F= '/DISTRIB_ID/ {print $2}' /etc/lsb-release)" = "Ubuntu" ]; then
       DIST="Ubuntu"
-      sed -i 's/#install-packages#/apt install -y iw wget awk msmtp msmtp-mta s-nail dhcpcd ifplugd sudo dnsmasq dialog wireless_tools polkit net-tools openssh/g' /root/up.sh
+      sed -i 's/#install-packages#/apt install -y iw wget mawk msmtp msmtp-mta s-nail dhcpcd ifplugd sudo dnsmasq dialog wireless-tools net-tools openssh-server/g' /root/up.sh
       echo "$DIST based update"
     else
       DIST="Debian $(cat /etc/debian_version)"
       REV=""
-      sed -i 's/#install-packages#/apt install -y iw wget awk msmtp msmtp-mta s-nail dhcpcd ifplugd sudo dnsmasq dialog wireless_tools polkit net-tools openssh/g' /root/up.sh
+      sed -i 's/#install-packages#/apt install -y iw wget mawk msmtp msmtp-mta s-nail dhcpcd ifplugd sudo dnsmasq dialog wireless-tools net-tools openssh-server/g' /root/up.sh
       echo "$DIST based update"
     fi
 
   elif [ -f /etc/arch-release ] ; then
     DIST="Arch"
-    sed -i 's/#install-packages#/pacman -S --noconfirm iw wget awk msmtp msmtp-mta s-nail dhcpcd ifplugd sudo dnsmasq dialog wireless_tools polkit net-tools openssh/g' /root/up.sh
+    # polkit > don't know if I need it...
+    sed -i 's/#install-packages#/pacman -S --noconfirm iw wget awk msmtp msmtp-mta s-nail dhcpcd ifplugd sudo dnsmasq dialog wireless_tools net-tools openssh/g' /root/up.sh
     echo "$DIST based update"
 fi
 
