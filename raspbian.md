@@ -2,7 +2,7 @@
 title: raspbian - buster
 description: 
 published: true
-date: 2019-08-16T20:56:47.676Z
+date: 2019-08-16T20:57:53.506Z
 tags: 
 ---
 
