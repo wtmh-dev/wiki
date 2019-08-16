@@ -2,7 +2,7 @@
 title: ALMA - Arch Linux Mobile Appliance
 description: 
 published: true
-date: 2019-08-15T20:10:06.248Z
+date: 2019-08-16T08:52:48.408Z
 tags: 
 ---
 
@@ -48,6 +48,7 @@ systemctl enable dnsmasq
 systemctl enable dhclient
 systemctl enable netctl-ifplugd@eth0.service
 systemctl enable netctl-auto@wlan0.service
+systemctl enable systemd-timesyncd.service
 systemctl enable dhcpcd
 
 systemctl disable systemd-networkd
