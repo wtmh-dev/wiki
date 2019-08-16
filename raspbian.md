@@ -2,7 +2,7 @@
 title: raspbian - buster
 description: 
 published: true
-date: 2019-08-16T21:33:42.459Z
+date: 2019-08-16T21:36:24.799Z
 tags: 
 ---
 
@@ -85,7 +85,6 @@ cat > /root/up.sh <<EOL
 
 apt install -y wget mawk msmtp msmtp-mta s-nail
 EOL
-```
 
 echo 'chmod +x files ################################################################################'
 
@@ -194,7 +193,7 @@ echo 'enabling nid.timmer ######################################################
 systemctl enable nid.timer
 
 echo 'DONE ################################################################################'
-
+```
 
 ## step 4 >>>
 
