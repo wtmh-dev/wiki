@@ -2,11 +2,11 @@
 title: raspbian - buster
 description: 
 published: true
-date: 2019-08-16T21:36:24.799Z
+date: 2019-08-16T21:38:03.863Z
 tags: 
 ---
 
-# creating nomad conf
+# creating raspbian buster auto-interfaces with ArchLinux
 
 ## step 0 >>> 
 
